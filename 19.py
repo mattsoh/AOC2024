@@ -1,0 +1,2 @@
+(t:=(q:=__import__)('sys').stdin.read().split('\n')),print(sum((c:=q('functools').cache(lambda d:sum(c(d[len(i):])for i in t[0].split(', ')if d[:len(i)]==i)if d else 1))(i)>0 for i in t[2:])),print(sum(c(i)for i in t[2:]))
+(t:=(q:=__import__)('sys').stdin.read().split('\n')),print(sum((c:=q('functools').cache(lambda d:sum(c(d[len(i):])for i in t[0].split(', ')if d[:len(i)]==i)if d else 1))(i)for i in t[2:]))
